@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Vaga</title>
+    <link rel="shortcut icon" href="../media/banco-do-brasil-01-logo-png-transparent.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/styleeditar.css">
+</head>
+
+<body>
+
+
+    <div  id="inicio">
+        <img src="../media/Banco_do_Brasil_logo.svg-removebg-preview.png" alt="logo" id="logo">
+        <img id="perfil" src="../media/perfil.png" alt="perfil.png">
+    </div>
+
+        <div id="voltar">
+
+            <a href="../paginas/home.html"><img id="voltarimg" src="../media/back.png" alt="voltar.png"></a>
+            <p>Voltar para vagas</p>
+        </div>
+
+
+    <main>
+
+        <section id="adicionar">
+
+            <h2>Editar vagas</h2>
+
+            <form action="">
+
+
+                <div id="inputs">
+
+                    <div id="esquerda">
+
+                        <select name="area" id="area" required>
+                            <option value="" disabled selected hidden>Area</option>
+                            <option value="Atendimento e Comercial">Atendimento e Comercial</option>
+                            <option value="Financeiro e Contábil">Financeiro e Contábil</option>
+                            <option value="Jurídico">Jurídico</option>
+                            <option value="Recursos Humanos">Recursos Humanos (RH)</option>
+                            <option value="Tecnologia da informação">Tecnologia da informação (TI)</option>
+                            <option value="mais">...</option>
+
+                        </select>
+
+                        <fieldset>
+                            <legend>Cargo</legend>
+
+                            <input id="cargo" name="cargo" type="text" placeholder="Ex: Engenheiro de Sofware" required>
+
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Jornada</legend>
+
+                            <input id="jornada" name="jornada" type="number" placeholder="Ex: 80 horas" required>
+
+                        </fieldset>
+
+                    </div>
+
+
+
+                    <div id="direita">
+
+                        <select name="tipo" id="tipo" required>
+                            <option value="" disabled selected hidden>Tipo</option>
+                            <option value="Estágiario">Estágiario</option>
+                            <option value="Treinee">Treinee</option>
+                            <option value="Junior">Junior</option>
+                            <option value="Pleno">Pleno</option>
+                            <option value="Sênior">Sênior</option>
+
+                        </select>
+
+                        <fieldset>
+                            <legend>Data de início</legend>
+
+                            <input id="data" name="data" type="date" required>
+
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Salário</legend>
+
+                            <input id="salario" name="salario" type="number" placeholder="Ex: 2.000,00" required>
+
+                        </fieldset>
+
+                    </div>
+                </div>
+
+                <div id="baixo">
+
+                    <fieldset id="requisitos">
+
+                        <legend>Principais requisitos</legend>
+
+                        <input id="requisitos" name="requisitos" type="text"
+                            placeholder="Ex: Inglês Intermediário, C avançado" required>
+
+                    </fieldset>
+
+                    <a id="botao">Editar vagas</a>
+
+                </div>
+
+            </form>
+
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>

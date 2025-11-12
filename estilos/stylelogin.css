@@ -1,0 +1,143 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+
+background-color: #FBE304;
+height: 100vh;
+width: 100vw;
+
+}
+
+main {
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top: 30px;
+
+}
+
+#logo {
+
+height: 80px;
+width: 500px;
+
+
+}
+
+
+#login {
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+background-color: rgb(255, 255, 255);
+height: 500px;
+width: 80vw;
+margin: 10px 0px 10px 0px;
+border-radius: 30px;
+
+box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.492);
+
+
+}
+
+
+fieldset{
+
+border-radius: 10px;
+border: 1px solid #003DA5;
+color: #003DA5;
+width: 30vw;
+margin: 20px 0px 20px 0px;
+padding: 10px;
+
+}
+
+legend {
+padding: 0px 5px 0px 5px;
+
+}
+
+#iformulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    margin: 50px;
+}
+
+#login h1 {
+
+color: #003DA5;
+font-size: 20px;
+
+}
+
+#iformulario input {
+
+border: none;
+font-size: 20px;
+width: 100%;
+height: 30px;
+
+}
+
+#iformulario input:focus-visible {
+
+border: none;
+outline: none;
+
+}
+
+form > .botao{
+    display: block;
+    text-align: end;
+    font-size: 1em;
+    width: 100%;
+  
+}
+
+#ienviar {
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 20px;
+    width: 85%;
+    background-color: #003DA5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+#ienviar:hover{
+
+background-color: #FBE304;
+color: black;
+border: 1px solid black;
+    }
+
+section#login > div#loginimagem{
+    display: block;
+    background: #5f2c82 url(../media/tiro-vertical-de-baixo-angulo-de-arranha-ceus-em-uma-fachada-de-vidro-em-frankfurt-alemanha.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 80%;
+    border-radius: 0px 30px 30px 0px;
+}
+
+
+
+

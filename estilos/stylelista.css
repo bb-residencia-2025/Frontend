@@ -1,0 +1,117 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+#logo {
+
+    height: 80px;
+    width: 500px;
+
+}
+
+#inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#perfil {
+
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border: 1px solid #003DA5;
+    border-radius: 50px;
+
+}
+
+#voltar {
+    display: flex;
+    align-items: center;
+
+
+}
+
+#voltarimg {
+
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-right: 10px
+}
+
+main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+
+}
+
+
+h1 {
+
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 1.4em;
+    color: #003DA5;
+
+}
+
+table {
+
+    padding: 10px;
+    border: 1px solid #003DA5;
+    width: 80vw;
+    border-collapse: collapse;
+
+
+}
+
+td, th {
+    padding: 10px;
+    border: 2px solid #003DA5;
+    text-align: left;
+
+}
+
+.afinidade {
+
+    text-align: center;
+
+}
+
+.pos {
+
+    width: 15px;
+
+}
+
+.icones {
+
+    text-align: center;
+
+}
+
+.icones img {
+
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+
+
+}

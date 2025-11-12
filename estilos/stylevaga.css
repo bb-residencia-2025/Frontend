@@ -1,0 +1,175 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+#logo {
+
+    height: 80px;
+    width: 500px;
+
+}
+
+#inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#perfil {
+
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border: 1px solid #003DA5;
+    border-radius: 50px;
+
+}
+
+#voltar {
+    display: flex;
+    align-items: center;
+
+
+}
+
+#voltarimg {
+
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-right: 10px
+}
+
+
+main {
+
+    display: flex;
+
+
+}
+
+#esquerdamain {
+
+    text-align: center;
+    width: 70vw;
+
+}
+
+#esquerdamain h2 {
+
+    margin-bottom: 20px;
+    color: #003DA5;
+
+}
+
+#detalhes {
+
+    display: flex;
+
+
+}
+
+#esquerda {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+
+
+}
+
+#direita {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+
+
+
+
+}
+
+.dados {
+
+    border: 1px solid #003DA5;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    text-align: start;
+
+}
+
+#requisitos {
+
+    width: 350px;
+    height: 250px;
+    margin-left: 40px;
+
+}
+
+#requisitos p {
+
+    margin-top: 10px;
+
+
+}
+
+#direitamain {
+
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#direitamain p {
+
+    padding: 30px 90px 30px 90px;
+    background-color: #FFCC00;
+    color: #003DA5;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 40px 0px 40px 0px;
+
+
+
+}
+
+#direitamain a {
+
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 20px;
+    width: 50%;
+    background-color: #003DA5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#direitamain a:hover {
+
+    background-color: #FBE304;
+    color: black;
+    border: 1px solid black;
+}
