@@ -13,7 +13,8 @@
 
     <header>
 
-    <img src="../media/banco-do-brasil-01-logo-png-transparent.png" alt="logo" id="logo">
+
+        <img src="../media/Banco_do_Brasil_logo.svg-removebg-preview.png" alt="logo">
 
     </header>
 
@@ -21,206 +22,50 @@
 
     <main>
 
-        <section id="naoconcluidas">
 
-            <h2>Suas vagas não concluídas</h2>
+        <h1>Bem Vindo, Usuário!</h1>
 
-            <div class="vaga">
+        <h2>O que deseja fazer?</h2>
 
-                <div id="vagaimg"><img src="../media/responsivo.png" alt="icone tecnologia"></div>
+        <section id="opoces">
 
-                <div class="vagas_info">
 
-                    <div id="informacoes">
+            <div class="opcoes">
 
-                        <h3>Tecnologia</h3>
-                        <h4>Suporte de Ti (SP)</h4>
-                        <p>Data de inicio 00/00/0000</p>
-
-                    </div>
-
-                    <div id="numerocan">
-
-                        <p>Numero de candidatos:</p>
-                        <p id="num">50</p>
-                        <a href="lista.html">Ver lista</a>
-
-                    </div>
-
-                </div>
-
-                <div class="icones">
-
-                    <a href="../paginas/vaga.html"><img src="https://cdn-icons-png.flaticon.com/512/69/69544.png" alt="icone mais informações"></a>
-                    <img src="https://img.icons8.com/m_rounded/200/FA5252/trash.png" alt="icone lixeira">
-                    <a href="editar.html"><img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt="icone editar"></a>
-
-                </div>
+                <h3>➕ Adicionar Vaga</h3>
+                <p>Adicione novas vagas para funcionários do Banco do Brasil aptos a participar.</p>
+                <a href="adicionar.html" class="botao">Adicionar</a>
 
             </div>
 
-            <div class="vaga">
-
-                <div id="vagaimg"><img src="https://cdn-icons-png.flaticon.com/512/1350/1350815.png" alt="icone tecnologia"></div>
-
-                <div class="vagas_info">
-
-                    <div id="informacoes">
-
-                        <h3>Administrativo</h3>
-                        <h4>Gerente (RJ)</h4>
-                        <p>Data de inicio 00/00/0000</p>
-
-                    </div>
-
-                    <div id="numerocan">
-
-                        <p>Numero de candidatos:</p>
-                        <p id="num">12</p>
-                        <a href="lista.html">Ver lista</a>
-
-                    </div>
-
-                </div>
-
-                <div class="icones">
-
-                    <img src="https://cdn-icons-png.flaticon.com/512/69/69544.png" alt="icone mais informações">
-                    <img src="https://img.icons8.com/m_rounded/200/FA5252/trash.png" alt="icone lixeira">
-                    <a href="editar.html"><img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt="icone editar"></a>
-
-                </div>
-
-            </div>
-
-            <div class="vaga">
-
-                <div id="vagaimg"><img src="../media/financeiro.png" alt="icone tecnologia"></div>
-
-                <div class="vagas_info">
-
-                    <div id="informacoes">
-
-                        <h3>Financeiro</h3>
-                        <h4>Contador (BSB)</h4>
-                        <p>Data de inicio 00/00/0000</p>
-
-                    </div>
-
-                    <div id="numerocan">
-
-                        <p>Numero de candidatos:</p>
-                        <p id="num">99+</p>
-                        <a href="lista.html">Ver lista</a>
-
-                    </div>
-
-                </div>
-
-                <div class="icones">
-
-                    <img src="https://cdn-icons-png.flaticon.com/512/69/69544.png" alt="icone mais informações">
-                    <img src="https://img.icons8.com/m_rounded/200/FA5252/trash.png" alt="icone lixeira">
-                    <a href="editar.html"><img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt="icone editar"></a>
-
-                </div>
+            <div class="opcoes">
+                <h3>👁️ Ver Vagas</h3>
+                <p>Visualize vagas de qualquer área, concluídas ou abertas.</p>
+                <a href="vagas.html" class="botao">Ver</a>
 
             </div>
 
 
+            <div class="opcoes">
+
+                <div class="imagem">
+
+                    <img src="../media/editar.png" alt="icone editar">
+
+                </div>
+
+                <div class="conteudo">
+
+                    <h3>✏️ Editar Vagas</h3>
+                    <p>Edite vagas já abertas para atualizar informações ou encerrá-las.</p>
+                    <a href="editar.html" class="botao">Editar</a>
+                </div>
+
+            </div>
 
 
         </section>
 
-
-        <section id="adicionar">
-
-            <h2>Adicionar vagas</h2>
-
-            <form action="">
-
-
-                <div id="inputs">
-
-                    <div id="esquerda">
-
-                        <select name="area" id="area" required>
-                            <option value="" disabled selected hidden>Area</option>
-                            <option value="Atendimento e Comercial">Atendimento e Comercial</option>
-                            <option value="Financeiro e Contábil">Financeiro e Contábil</option>
-                            <option value="Jurídico">Jurídico</option>
-                            <option value="Recursos Humanos">Recursos Humanos (RH)</option>
-                            <option value="Tecnologia da informação">Tecnologia da informação (TI)</option>
-                            <option value="mais">...</option>
-
-                        </select>
-
-                        <fieldset>
-                            <legend>Cargo</legend>
-
-                            <input id="cargo" name="cargo" type="text" placeholder="Ex: Engenheiro de Sofware" required>
-
-                        </fieldset>
-
-                        <fieldset>
-                            <legend>Jornada</legend>
-
-                            <input id="jornada" name="jornada" type="number" placeholder="Ex: 80 horas" required>
-
-                        </fieldset>
-
-                    </div>
-
-
-
-                    <div id="direita">
-
-                        <select name="tipo" id="tipo" required>
-                            <option value="" disabled selected hidden>Tipo</option>
-                            <option value="Estágiario">Estágiario</option>
-                            <option value="Treinee">Treinee</option>
-                            <option value="Junior">Junior</option>
-                            <option value="Pleno">Pleno</option>
-                            <option value="Sênior">Sênior</option>
-
-                        </select>
-
-                        <fieldset>
-                            <legend>Data de início</legend>
-
-                            <input id="data" name="data" type="date" required>
-
-                        </fieldset>
-
-                        <fieldset>
-                            <legend>Salário</legend>
-
-                            <input id="salario" name="salario" type="number" placeholder="Ex: 2.000,00" required>
-
-                        </fieldset>
-
-                    </div>
-                </div>
-
-                <div id="baixo">
-
-                    <fieldset id="requisitos">
-
-                        <legend>Principais requisitos</legend>
-
-                        <input id="requisitos" name="requisitos" type="text"
-                            placeholder="Ex: Inglês Intermediário, C avançado" required>
-
-                    </fieldset>
-
-                    <a id="botao">Adicionar Vaga</a>
-
-                </div>
-
-            </form>
-
-
-        </section>
 
 
     </main>
