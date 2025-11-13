@@ -11,7 +11,16 @@ body {
 background-color: #FBE304;
 height: 100vh;
 width: 100vw;
+padding-top: 10px ;
 
+}
+
+
+header {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 main {
