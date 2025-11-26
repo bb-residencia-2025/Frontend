@@ -8,38 +8,40 @@
 
 body {
 
-background-color: #FBE304;
-height: 100vh;
-width: 100vw;
-padding-top: 10px ;
+    background-color: #FBE304;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
 }
 
-
 header {
-    display: flex ;
+
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+
 }
 
 main {
 
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
 }
 
 #logo {
 
-height: 80px;
-width: 500px;
-position: absolute;
-top: 50px;
-left: 50px;
-margin: 0;
+    height: 80px;
+    width: 500px;
+    margin: 0;
 
 
 }
@@ -47,35 +49,35 @@ margin: 0;
 
 #login {
 
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-background-color: rgb(255, 255, 255);
-height: 500px;
-width: 80vw;
-margin: 10px 0px 10px 0px;
-border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 80vw;
+    margin: 10px 0px 10px 0px;
+    border-radius: 30px;
 
-box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.492);
+    box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.492);
 
 
 }
 
 
-fieldset{
+fieldset {
 
-border-radius: 10px;
-border: 1px solid #003DA5;
-color: #003DA5;
-width: 30vw;
-margin: 20px 0px 20px 0px;
-padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #003DA5;
+    color: #003DA5;
+    width: 30vw;
+    margin: 20px 0px 20px 0px;
+    padding: 10px;
 
 }
 
 legend {
-padding: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
 
 }
 
@@ -85,38 +87,38 @@ padding: 0px 5px 0px 5px;
     justify-content: center;
     flex-direction: column;
     width: 75%;
-    margin: auto ;
+    margin: auto;
 }
 
 #login h1 {
 
-color: #003DA5;
-font-size: 20px;
+    color: #003DA5;
+    font-size: 20px;
 
 }
 
 #iformulario input {
 
-border: none;
-font-size: 20px;
-width: 100%;
-margin: auto;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    margin: auto;
 
 }
 
 #iformulario input:focus-visible {
 
-border: none;
-outline: none;
+    border: none;
+    outline: none;
 
 }
 
-form > .botao{
+form>.botao {
     display: block;
     text-align: end;
     font-size: 1em;
     width: 100%;
-  
+
 }
 
 #ienviar {
@@ -133,14 +135,14 @@ form > .botao{
     text-decoration: none;
 }
 
-#ienviar:hover{
+#ienviar:hover {
 
-background-color: #FBE304;
-color: black;
-border: 1px solid black;
-    }
+    background-color: #FBE304;
+    color: black;
+    border: 1px solid black;
+}
 
-section#login > div#loginimagem{
+section#login>div#loginimagem {
     display: block;
     background: #5f2c82 url(../media/tiro-vertical-de-baixo-angulo-de-arranha-ceus-em-uma-fachada-de-vidro-em-frankfurt-alemanha.jpg) no-repeat;
     background-size: cover;
@@ -149,7 +151,3 @@ section#login > div#loginimagem{
     width: 80%;
     border-radius: 0px 30px 30px 0px;
 }
-
-
-
-
