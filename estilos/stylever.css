@@ -55,8 +55,6 @@ main h1 {
     align-items: start;
     justify-content: start;
 
-    width: 65vw;
-
     margin: 20px;
 
 }
@@ -123,7 +121,7 @@ tr:hover {
 }
 
 
-.acoes button {
+.acoes a {
 
     background: none;
     border: none;
@@ -131,6 +129,7 @@ tr:hover {
     font-size: 1.2em;
     margin-right: 5px;
     color: #1e88e5;
+    text-decoration: none;
 
 }
 
@@ -144,6 +143,7 @@ tr:hover {
     font-weight: 600;
     margin-left: 5px;
     transition: background-color 0.3s;
+
 }
 
 .btn-ver-candidatos:hover {
@@ -154,6 +154,6 @@ tr:hover {
 
 #lixeira {
 
-height: 19px;
+    height: 19px;
 
 }
