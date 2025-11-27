@@ -45,9 +45,7 @@ main {
 }
 
 
-
-main h1,
-h2 {
+main h1 {
 
     text-align: center;
     color: #003DA5;
@@ -57,24 +55,15 @@ h2 {
     align-items: start;
     justify-content: start;
 
-    width: 80vw;
-    margin-bottom: 5px;
+    width: 65vw;
 
-
-}
-
-
-main h2 {
-
-    font-size: 1.2em;
-    margin-bottom: 40px;
-    color: black;
+    margin: 20px;
 
 }
 
 table {
-
-    width: 80vw;
+    width: 65vw;
+    height: 60vh;
     border-collapse: collapse;
     border-radius: 16px;
     padding: 20px;
@@ -89,30 +78,82 @@ td {
     border-bottom: 1px solid #ddd;
 }
 
+td h2 {
 
-.afinidade {
+    font-size: 1.1em;
+    font-weight: bold;
 
+}
+
+td h3 {
+
+    font-weight: 300;
+    font-size: 0.9em;
+
+}
+
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
     text-align: center;
-
 }
 
-.pos {
-
-    width: 15px;
-
+.status-aberta {
+    background-color: #4CAF50;
 }
 
-.icones {
 
-    text-align: center;
-
+.status-encerrada {
+    background-color: #F44336;
 }
 
-.icones img {
 
-    width: 30px;
-    height: 30px;
+.acoes button {
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
     margin-right: 5px;
+    color: #1e88e5;
 
+}
+
+.acoes .btn-ver-candidatos {
+
+    font-size: 0.85em;
+    padding: 5px 8px;
+    border: 1px solid #1e88e5;
+    border-radius: 4px;
+    color: #1e88e5;
+    font-weight: 600;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-ver-candidatos:hover {
+
+    background-color: #e3f2fd;
+
+}
+
+#lixeira {
+
+height: 19px;
 
 }
