@@ -46,30 +46,50 @@ main {
 
 
 
-main h1,
-h2 {
-
-    text-align: center;
+main h1 {
     color: #003DA5;
     font-size: 1.8em;
-
-    display: flex;
-    align-items: start;
-    justify-content: start;
-
-    width: 80vw;
+    width: 80vw; 
     margin-bottom: 5px;
-
-
+    text-align: left; 
 }
 
+#subtitulo {
+    display: flex; 
+    align-items: center; 
+    justify-content: start;
+    width: 80vw; 
+    margin-bottom: 40px;
+}
 
 main h2 {
 
     font-size: 1.2em;
-    margin-bottom: 40px;
+    margin-right: 5px;
     color: black;
 
+}
+
+main h3 {
+
+    font-size: 0.9em;
+}
+
+#mais {
+
+    width: 80vw;
+    color: #003DA5;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+#status {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px; 
+    border-radius: 5px;
 }
 
 table {
@@ -89,10 +109,9 @@ td {
     border-bottom: 1px solid #ddd;
 }
 
-
 .afinidade {
 
-    text-align: center;
+text-align: center;
 
 }
 
@@ -115,4 +134,33 @@ td {
     margin-right: 5px;
 
 
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+.status {
+
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.contratado {
+    background-color: #1E8449;
+}
+
+.pendente {
+    background-color: #F5B041;
+}
+
+.rejeitado {
+    background-color: #C0392B;
 }
