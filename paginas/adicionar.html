@@ -1,87 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Vagas</title>
-    <link rel="stylesheet" href="styleadicionar.css">
+    <link rel="stylesheet" href="../estilos/styleadicionar.css">
     <link rel="shortcut icon" href="../media/banco-do-brasil-01-logo-png-transparent.png" type="image/x-icon">
 </head>
+
 <body>
 
 
     <body>
 
-    <header>
+        <header>
 
-        <img src="../media/Banco_do_Brasil_logo.svg-removebg-preview.png" alt="logo">
+            <img src="../media/Banco_do_Brasil_logo.svg-removebg-preview.png" alt="logo">
 
-    </header>
-
-
-
-    <main>
+        </header>
 
 
-        <h1>Bem Vindo, Usuário!</h1>
 
-        <h2>O que deseja fazer?</h2>
+        <main>
 
-        <section id="opoces">
+            <h1>Adicionar nova vaga</h1>
+
+            <section id="adicionar">
+
+                <form action="">
 
 
-            <a href="adicionar.html" class="linkcard">
+                    <div id="inputs">
 
-                <div class="opcoes">
+                        <div id="esquerda">
 
-                    <img src="https://cdn-icons-png.flaticon.com/512/1091/1091585.png" alt="Adicionar Arquivo">
+                            <fieldset>
 
-                    <div class="conteudo">
+                                <legend>Área 🌐</legend>
 
-                        <h3>Adicionar Vaga</h3>
-                        <p>Adicione novas vagas para funcionários do Banco do Brasil aptos a participar.</p>
+                                <select name="area" id="area" required>
+                                    <option value="" disabled selected hidden>Area</option>
+                                    <option value="Atendimento e Comercial">Atendimento e Comercial</option>
+                                    <option value="Financeiro e Contábil">Financeiro e Contábil</option>
+                                    <option value="Jurídico">Jurídico</option>
+                                    <option value="Recursos Humanos">Recursos Humanos (RH)</option>
+                                    <option value="Tecnologia da informação">Tecnologia da informação (TI)</option>
+                                    <option value="mais">...</option>
+
+                                </select>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Cargo 💼</legend>
+
+                                <input id="cargo" name="cargo" type="text" placeholder="Ex: Engenheiro de Sofware"
+                                    required>
+
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Jornada ⏰</legend>
+
+                                <input id="jornada" name="jornada" type="number" placeholder="Ex: 80 horas" required>
+
+                            </fieldset>
+
+                        </div>
+
+
+
+                        <div id="direita">
+
+                            <fieldset>
+
+                                <legend>Tipo 📊</legend>
+
+                                <select name="tipo" id="tipo" required>
+                                    <option value="" disabled selected hidden>Tipo</option>
+                                    <option value="Estágiario">Estágiario</option>
+                                    <option value="Treinee">Treinee</option>
+                                    <option value="Junior">Junior</option>
+                                    <option value="Pleno">Pleno</option>
+                                    <option value="Sênior">Sênior</option>
+
+                                </select>
+
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Data de início 📅</legend>
+
+                                <input id="data" name="data" type="date" required>
+
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Salário 💰</legend>
+
+                                <input id="salario" name="salario" type="number" placeholder="Ex: 2.000,00" required>
+
+                            </fieldset>
+
+
+                        </div>
+                    </div>
+
+                    <div id="baixo">
+
+                        <fieldset id="requisitos">
+
+                            <legend>Principais requisitos</legend>
+
+                            <input id="requisitos" name="requisitos" type="text"
+                                placeholder="Ex: Inglês Intermediário, C avançado" required>
+
+                        </fieldset>
+
+                        <a id="botao">Salvar vagas</a>
 
                     </div>
 
-                </div>
-            </a>
+                </form>
 
-            <a href="vervagas.html" class="linkcard">
-                <div class=" opcoes">
+            </section>
+        </main>
+    </body>
 
-                <img src="https://cdn-icons-png.flaticon.com/512/18096/18096827.png" alt="Ver vagas">
-
-                <div class="conteudo">
-
-                    <h3>Ver Vagas</h3>
-                    <p>Visualize vagas de qualquer área, concluídas ou abertas.</p>
-
-                </div>
-
-                </div>
-            </a>
-
-            <a href="editar.html" class="linkcard">
-
-                <div class="opcoes">
-
-                    <img src="https://cdn-icons-png.flaticon.com/512/3597/3597104.png" alt="Editar Vagas">
-
-                    <div class="conteudo">
-
-                        <h3>Editar Vagas</h3>
-                        <p>dite vagas já abertas para atualizar informações ou encerrá-las.</p>
-
-                    </div>
-
-                </div>
-            </a>
-
-
-
-        </section>
-
-    </main>
-    
-</body>
 </html>

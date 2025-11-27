@@ -1,0 +1,196 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+
+    height: 100%;
+    width: 100vw;
+
+}
+
+header {
+
+    background-color: #ffcc00;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+
+header img {
+    height: 50px;
+}
+
+
+
+
+main {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+main h1 {
+
+    text-align: center;
+    color: #003DA5;
+    font-size: 1.8em;
+
+    display: flex;
+    align-items: start;
+    justify-content: start;
+
+    width: 65vw;
+
+    margin: 20px;
+
+}
+
+section#adicionar {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 65vw;
+
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+
+#esquerda, #direita {
+    width: 49%; 
+
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#inputs {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+
+fieldset {
+
+    border-radius: 10px;
+    color: #003DA5;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    border: none;
+
+    font-size: 1.1em;
+
+}
+
+legend {
+    padding: 0px 5px 0px 5px;
+
+}
+
+input, select {
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 8px 12px;
+    height: 40px;
+
+    border: 1px solid #003DA5;
+    border-radius: 8px;
+
+    font-size: 1em;
+}
+
+select:focus-visible {
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+
+#requisitos {
+
+    height: 80px;
+
+}
+
+option {
+
+    text-align: center;
+    color: black;
+
+}
+
+#data {
+
+    color: gray;
+
+}
+
+#botao {
+
+    margin-top: 30px;
+    margin-right: 5px;
+    padding: 8px 20px;
+    font-size: 1.2em;
+
+    background-color: #003DA5;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    align-self: flex-end;
+
+}
+
+#botao:hover {
+
+    background-color: #FBE304;
+    color: black;
+    border: 1px solid black;
+}
+
+#baixo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#baixo #requisitos {
+
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+
+}

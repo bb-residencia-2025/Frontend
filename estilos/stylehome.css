@@ -19,22 +19,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
     
 }
 
-#logo {
 
-    height: 80px;
-    width: 500px;
-
+header img {
+    height: 50px;
 }
+
+
 
 main {
 
     display: flex;
-    margin-top: 20px;
-
-
 }
 
 section#naoconcluidas {
@@ -46,10 +44,6 @@ section#naoconcluidas {
     justify-content: center;
     align-items: center;
 
-}
-
-header img {
-    height: 50px;
 }
 
 
