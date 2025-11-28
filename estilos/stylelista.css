@@ -54,6 +54,24 @@ main h1 {
     text-align: left; 
 }
 
+#voltar {
+display: flex;
+align-items: center;
+margin-right: auto;
+
+}
+
+#voltarimg  {
+
+width: 50px;
+height: 50px;
+margin-left: 20px;
+margin-top: 5px;
+margin-right: 10px
+
+}
+
+
 #subtitulo {
     display: flex; 
     align-items: center; 
