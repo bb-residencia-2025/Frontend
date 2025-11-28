@@ -10,110 +10,153 @@
 </head>
 
 <body>
+    <header>
+
+        <img src="../media/Banco_do_Brasil_logo.svg-removebg-preview.png" alt="logo">
+
+    </header>
 
 
-    <div  id="inicio">
-        <img src="../media/Banco_do_Brasil_logo.svg-removebg-preview.png" alt="logo" id="logo">
+    <!--<div  id="inicio">
         <img id="perfil" src="../media/perfil.png" alt="perfil.png">
+    </div>-->
+
+    <div id="voltar">
+
+        <a href="../paginas/home.html"><img id="voltarimg" src="../media/back.png" alt="voltar.png"></a>
+        
     </div>
-
-        <div id="voltar">
-
-            <a href="../paginas/home.html"><img id="voltarimg" src="../media/back.png" alt="voltar.png"></a>
-            <p>Voltar para vagas</p>
-        </div>
 
 
     <main>
 
-        <section id="adicionar">
+        <div class="box">
+            <div class="titulo">
+                <h2>Editar Vaga</h2>
+            </div>
+            <div class="subtitulo">
+                <p class="vaga">Vaga: Analista Financeiro - Pleno</p>
+                <div class="statusVaga">ABERTA</div>
+            </div>
 
-            <h2>Editar vagas</h2>
 
-            <form action="">
+            <div class="infoVagas">
+                <div class="infoVagasTopo">
+                    <h3>Informações da vaga</h3>
+                </div>
+
+                <div class="infoVagasCorpo">
+                    
+                    <div class="nome">
+
+                        <p class="infop">Nivel</p>
+                        <input type="text" class="input" name="" id="" placeholder="Nome">
+
+                        <form action="">
+
+                                <select class="forms" name="" id="form1">
+                                    <option class="options" id="optiondef" value=""  selected hidden>Niveis</option>
+                                    <option class="options" value="">Estágiario</option>
+                                    <option class="options" value="">Junior</option>
+                                    <option class="options" value="">Pleno</option>
+                                    <option class="options" value="">Senior</option>
+                                    <option class="options" value="">-</option>
+                                </select>
+                            
+                        </form>
+
+                        <input id="" class="input" type="text" placeholder="Cargo atual">
+                        <img class="icons" src="" alt="icone editar">
+                    </div>
+
+                    <div class="area">
+                        <p class="infop">Area</p>
+                        <input type="text" class="input" name="" id="" placeholder="Ramo">
+
+                        <form action="">
+
+                                <select class="forms" name="" id="form2">
+                                    <option class="options" id="optiondef" value="" hidden>Cargo</option>
+                                    <option class="options" value="">Gestão de Contas</option>
+                                    <option class="options" value="">R.H.</option>
+                                    <option class="options" value="">Escrituário</option>
+                                    <option class="options" value="">Agente de T.I.</option>
+                                    <option class="options" value="">-</option>
+                                </select>
+    
+                        </form>
+
+                        <input id="horario" class="input" type="text" placeholder="Horario semanal">
+                        <img class="icons" src="" alt=icone apagar>
+                    </div>
+                </div>
+            </div>
 
 
-                <div id="inputs">
+            <div class="dr">
+                <div class="detalhes">
+                    <h3>Requisitos e detalhes</h3>
+                </div>
 
-                    <div id="esquerda">
+                <div class="requisitos">
+                    
+                    <div class="minibox">
 
-                        <select name="area" id="area" required>
-                            <option value="" disabled selected hidden>Area</option>
-                            <option value="Atendimento e Comercial">Atendimento e Comercial</option>
-                            <option value="Financeiro e Contábil">Financeiro e Contábil</option>
-                            <option value="Jurídico">Jurídico</option>
-                            <option value="Recursos Humanos">Recursos Humanos (RH)</option>
-                            <option value="Tecnologia da informação">Tecnologia da informação (TI)</option>
-                            <option value="mais">...</option>
+                        <div class="rows">
+                            <p class="pr">Experiencia</p>
+                            <input class="inputr" type="text" placeholder="Ex: 2 anos">
+                        </div>
+                        <div class="rows">
+                            <p class="pr">Idiomas</p>
+                            <input class="inputr" type="text" placeholder="Ex: 3">
+                        </div>
+                        <div class="rows">
+                            <p class="pr">Salario Base</p>
+                            <input class="inputr" type="text" placeholder="Ex: 7.500,00">
+                        </div>
+                    </div>
 
-                        </select>
-
-                        <fieldset>
-                            <legend>Cargo</legend>
-
-                            <input id="cargo" name="cargo" type="text" placeholder="Ex: Engenheiro de Sofware" required>
-
-                        </fieldset>
-
-                        <fieldset>
-                            <legend>Jornada</legend>
-
-                            <input id="jornada" name="jornada" type="number" placeholder="Ex: 80 horas" required>
-
-                        </fieldset>
-
+                    <div class="descricao">
+                        <h4 class="dtitulo">Descrição</h4>
+                        <p class="dtexto">
+                            Um analista financeiro pleno é responsável por apoiar o fechamento contábil, 
+                            analisar fluxo de caixa e o desempenho financeiro através de relatórios como DRE 
+                            e balanço, além de gerenciar contas a pagar/receber e participar do planejamento 
+                            orçamentário.
+                        </p>
                     </div>
 
 
 
-                    <div id="direita">
+                    <div class="optionsr">
 
-                        <select name="tipo" id="tipo" required>
-                            <option value="" disabled selected hidden>Tipo</option>
-                            <option value="Estágiario">Estágiario</option>
-                            <option value="Treinee">Treinee</option>
-                            <option value="Junior">Junior</option>
-                            <option value="Pleno">Pleno</option>
-                            <option value="Sênior">Sênior</option>
+                        <div class="toggle-container">
 
-                        </select>
+                            <p class="togglep" >Status da vaga</p>
+                            
+                            <input type="checkbox" id="pureCSSToggle" class="toggle-checkbox" hidden> 
+                            
+                            <label for="pureCSSToggle" class="switch-label">
+                                <span class="switch-button"></span>
+                            </label>
 
-                        <fieldset>
-                            <legend>Data de início</legend>
+                            
+                        </div>
 
-                            <input id="data" name="data" type="date" required>
 
-                        </fieldset>
+                        <div class="salvarexcluir">
 
-                        <fieldset>
-                            <legend>Salário</legend>
+                            <p class="salvar">Salvar Vaga</p>
+                            <p class="excluir">Excluir Vaga</p>
 
-                            <input id="salario" name="salario" type="number" placeholder="Ex: 2.000,00" required>
-
-                        </fieldset>
-
+                        </div>
                     </div>
                 </div>
 
-                <div id="baixo">
 
-                    <fieldset id="requisitos">
+            </div>
+        </div>
 
-                        <legend>Principais requisitos</legend>
-
-                        <input id="requisitos" name="requisitos" type="text"
-                            placeholder="Ex: Inglês Intermediário, C avançado" required>
-
-                    </fieldset>
-
-                    <a id="botao">Editar vagas</a>
-
-                </div>
-
-            </form>
-
-
-        </section>
 
 
     </main>
