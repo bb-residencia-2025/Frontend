@@ -94,7 +94,6 @@ main {
 
 .subtitulo{
     margin-left: 30px;
-
     display: flex;
     gap: 20px;
 
@@ -118,7 +117,7 @@ main {
 
 .infoVagas{
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-right: 30px;
     display: flex;
     flex-direction: column;
@@ -128,8 +127,8 @@ main {
 
 
 .infoVagasTopo{
+
     margin-left: 1px;
-    margin-top: 20px;
     background-color: #c2cacd;
     display: flex;
     
