@@ -12,6 +12,21 @@ body {
 
 }
 
+header {
+
+    background-color: #ffcc00;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+header img {
+    height: 50px;
+}
+
 
 #logo {
 
@@ -55,148 +70,334 @@ margin-right: 10px
 }
 
 main {
-
     display: flex;
     justify-content: center;
-
 }
 
-
-section#adicionar {
-
-    width: 70vw;
-    margin-top: 25px;
+.box{
+    background-color: #ffffff;
+    width: 950px;
+    height: 500px;
+    border-radius: 18px;
+    box-shadow: 1px 2px 5px 2px black;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-
+    gap: 5px;
+    
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-
-}
-
-#inputs {
-    display: flex;
-    flex-direction:row;
-
-}
-
-section#adicionar h2 {
-
-    text-align: center;
-    color: #003DA5;
-    font-size: 1.5em;
-
-}
-
-fieldset {
-
-    border-radius: 10px;
-    border: 1px solid #003DA5;
-    color: #003DA5;
-    width: 400px;
-    margin: 20px 0px 20px 0px;
-    padding: 10px;
-
-}
-
-legend {
-    padding: 0px 5px 0px 5px;
-
-}
-
-#adicionar input {
-
-    border: none;
+.titulo{
+    margin-left: 30px;
+    margin-top: 30px;
     font-size: 20px;
-    width: 100%;
-    height: 30px;
+}
+
+.subtitulo{
+    margin-left: 30px;
+
+    display: flex;
+    gap: 20px;
 
 }
 
-#adicionar input:focus-visible {
+.vaga{
+    font-size: 18px;
+}
 
-    border: none;
-    outline: none;
+.statusVaga{
+    background-color: #11b63b;
+    color: white;
 
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.infoVagas{
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+  
+}
+
+
+.infoVagasTopo{
+    margin-left: 1px;
+    margin-top: 20px;
+    background-color: #c2cacd;
+    display: flex;
+    
+    padding-left: 10px;
+    padding-top: 11px;
+    border-radius: 15px;
+    height: 65px;
+}
+.infoVagasCorpo{
+    margin-left: 1px;
+    
+    margin-top: -15px;
+    background-color: rgb(239, 238, 238);
+    padding-left: 9px;
+}
+
+.nome{
+    display: flex;
+    background-color: rgb(239, 238, 238);
+    height: 50px;
+    align-items: center;
+    gap: 20px;
+}
+
+.area{
+    display: flex;
+    background-color: rgb(239, 238, 238);
+    height: 50px;
+    align-items: center;
+    gap: 20px;
+}
+
+.input{
+    
+    border-color: rgb(189, 189, 189);
+    border-width: 2px;
+    outline-color: #003da5;
+    
+    height: 35px;
+    width: 210px;
+    border-radius: 6px;
+    padding-left: 5px;
+    margin-left: -5px;
 }
 
 select {
 
-    font-size: 20px;
-    border-radius: 10px;
-    border: 1px solid #003DA5;
-    color: #003DA5;
-    width: 400px;
-    margin: 30px 0px 0px 0px;
-    padding: 18px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid rgb(189, 189, 189);
+    border-width: 2px;
 
+    color: #262626;
+    background-color: rgb(245, 242, 242);
 
+    
+    width: 190px;
+    height: 40px;
+    margin-top: 1px;
+    margin-left: -10px;
+    padding: 5px;
 }
 
-select:focus-visible {
-    border-radius: 10px 10px 0px 0px;
-
+select:focus-visible{
+    outline: none;
 }
 
-option {
+.options{
+    font-size: 15px;
+    color: #000000;
+}
 
+.options:focus-visible{
+    font-size: 15px;
     text-align: center;
-    color: black;
-
 }
 
-#esquerda {
-
-    margin-right: 20px;
-
+.infop{
+    width: 45px;
 }
 
-#data {
 
-    color: gray;
-
+.icons{
+    margin-left: auto;
+    width: 35px;
+    height: 35px;
 }
 
-#botao{
 
-    margin-top: 15px;
-    padding: 20px;
-    font-size: 20px;
-    width: 100%;
-    background-color: #003DA5;
-    color: white;
-    border: none;
+.dr{
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #c2cacd;
+    height: 140px;
+    border-radius: 15px;
+    padding-right: 10px;
+}
+
+.detalhes{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.requisitos{
+    display: flex;
+}
+
+.minibox{
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    width: 320px;
+    height: 97px;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
     border-radius: 10px;
+}
+
+.rows{
+    display: flex;
+}
+
+.pr{
+    margin-right: auto;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.inputr{
+    margin-left: auto;
+    border-color: rgb(189, 189, 189);
+    border-width: 2px;
+    outline-color: #003da5;
+    height: 30px;
+    width: 140px;
+    border-radius: 6px;
+    padding-left: 2px;
+}
+
+.descricao{
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    width: 320px;
+    height: 97px;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 10px;
+}
+
+.dtitulo{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.dtexto{
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.optionsr{
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    width: 220px;
+    height: 97px;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+}
+
+.icons{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.switch-label {
+    display: block;
+    width: 60px; 
+    height: 34px;
+    background-color: #2ECC71; 
+    border-radius: 34px;
     cursor: pointer;
-    text-align: center;
+    transition: background-color 0.4s;
+    position: relative;
+    
+    user-select: none;
 }
 
-#botao:hover {
-
-    background-color: #FBE304;
-    color: black;
-    border: 1px solid black;
+.switch-button {
+    display: block;
+    position: absolute;
+    height: 26px; 
+    width: 26px; 
+    left: 4px; 
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%; 
+    transition: transform 0.4s, background-color 0.4s; 
 }
 
-#baixo {
 
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-
+.toggle-checkbox:checked + .switch-label {
+    background-color: #c92a2a; 
 }
 
-#baixo #requisitos {
+.toggle-checkbox:checked + .switch-label .switch-button {
+    transform: translateX(26px);
+}
 
-margin-top: 5px;
-margin-bottom: 5px;
-width: 100%;
+.toggle-container{
+    margin-left: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
 
+.togglep{
+    margin-right: auto;
+}
+
+
+
+
+
+.salvarexcluir{
+    display: flex;
+    margin-top: 18px;
+    
+}
+
+.salvar{
+    background-color: #003da5;
+    color: #ffffff;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    width: 100px;
+    height: 28px;
+    border-radius: 8px;
+}
+
+.excluir{
+    
+    background-color: #c92a2a;
+    color: #ffffff;
+    margin-left: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 28px;
+    border-radius: 8px;
 }
