@@ -400,3 +400,13 @@ select:focus-visible{
     height: 28px;
     border-radius: 8px;
 }
+
+.salvar:hover{
+    background-color: #8aafef;
+    scale: 1.05;
+}
+
+.excluir:hover{
+    background-color: #ea7b7b;
+    scale: 1.05;
+}
