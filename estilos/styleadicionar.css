@@ -66,8 +66,9 @@ main h1 {
     justify-content: start;
 
     width: 65vw;
+    margin-bottom: 8px;
 
-    margin: 20px;
+
 
 }
 

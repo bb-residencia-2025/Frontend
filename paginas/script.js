@@ -2,6 +2,7 @@ const formulario = document.getElementById('form');
 
 let listaDeVagas = JSON.parse(localStorage.getItem('banco_vagas')) || [];
 
+
 class Vaga {
     constructor(area, cargo, jornada, tipo, data, salario, requisitos) {
         this.area = area;
@@ -12,6 +13,7 @@ class Vaga {
         this.salario = salario;
         this.requisitos = requisitos;
         this.id = Date.now();
+        this.status = "Aberta";
     }
 }
 
@@ -49,7 +51,7 @@ if (formulario) {
 // Função para criar a linha na tabela
 function novasVagas(vaga) {
 
-    const tabelaCorpo = document.getElementById('corpo-tabela');
+
 
     if (!tabelaCorpo) return;
 
@@ -77,6 +79,35 @@ function novasVagas(vaga) {
     tabelaCorpo.appendChild(tr);
 }
 
+function novasVagasEditar(vaga) {
+
+    const tabelaCorpo = document.getElementById('vagaeditar');
+    if (!tabelaCorpo) return;
+
+    const tr = document.createElement('tr');
+    tr.setAttribute('data-id', vaga.id);
+    tr.style.cursor = 'pointer';
+
+    tr.innerHTML = `
+        <td>
+            <h2>${vaga.cargo}</h2><br>
+            <h3>${vaga.tipo} • SP</h3>
+        </td>
+        <td>${vaga.area}</td>
+        <td>${vaga.candidatos || 0} candidatos</td> 
+        <td>
+            <div class="status status-${vaga.status.toLowerCase()}">${vaga.status}</div>
+        </td>
+    `;
+
+    // Evento para redirecionar ou abrir um modal de edição
+    tr.addEventListener('click', () => {
+        window.location.href = `editar-formulario.html?id=${vaga.id}`;
+    });
+
+    tabelaCorpo.appendChild(tr);
+}
+
 // Função para remover vaga
 window.removerVaga = function (id) {
     if (confirm("Deseja excluir esta vaga?")) {
@@ -87,7 +118,31 @@ window.removerVaga = function (id) {
 }
 
 // Renderiza as vagas ao carregar a página de gerenciamento
+function renderizarTabelas() {
+    const tabelaGerenciar = document.getElementById('corpo-tabela');
+    const tabelaEditar = document.getElementById('vagaeditar');
 
-if (document.getElementById('corpo-tabela')) {
-    listaDeVagas.forEach(vaga => novasVagas(vaga));
+    // 1. Lógica para a página de GERENCIAR 
+    
+    if (tabelaGerenciar) {
+        if (listaDeVagas.length === 0) {
+            tabelaGerenciar.innerHTML = '<tr><td colspan="5" style="text-align:center;">Nenhuma vaga cadastrada.</td></tr>';
+        } else {
+            tabelaGerenciar.innerHTML = ''; // Limpa antes de renderizar
+            listaDeVagas.forEach(vaga => novasVagas(vaga));
+        }
+    }
+
+    // 2. Lógica para a página de EDITAR
+    if (tabelaEditar) {
+        if (listaDeVagas.length === 0) {
+            tabelaEditar.innerHTML = '<tr><td colspan="4" style="text-align:center;">Nenhuma vaga para editar.</td></tr>';
+        } else {
+            tabelaEditar.innerHTML = ''; // Limpa antes de renderizar
+            listaDeVagas.forEach(vaga => novasVagasEditar(vaga));
+        }
+    }
 }
+
+renderizarTabelas();
+
